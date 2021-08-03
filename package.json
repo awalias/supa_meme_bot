@@ -1,0 +1,40 @@
+{
+  "name": "supamemebot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc --reporter=html --reporter=text mocha",
+    "deploy": "sls deploy",
+    "update": "sls deploy function --function generate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/awalias/supa_meme_bot"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/awalias/supa_meme_bot#readme",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "request": "^2.88.0",
+    "request-promise": "4.2.2",
+    "serverless-plugin-git-variables": "^3.2.0",
+    "tweetnacl": "^0.14.5",
+    "tweetnacl-util": "^0.15.1"
+  },
+  "devDependencies": {
+    "aws-sdk-mock": "^4.2.0",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^5.2.0",
+    "nock": "^10.0.6",
+    "nyc": "^13.1.0",
+    "rewire": "^4.0.1",
+    "serverless": "^2.52.1",
+    "serverless-domain-manager": "^2.6.13",
+    "serverless-dotenv-plugin": "^3.9.0",
+    "sinon": "^7.0.0"
+  }
+}

@@ -1,0 +1,23 @@
+service: ${file(./package.json):name}
+plugins:
+  - serverless-dotenv-plugin
+  
+provider:
+  name: aws
+  runtime: nodejs14.x
+  region: ap-southeast-1
+  iamRoleStatements:
+    - Effect: "Allow"
+      Action:
+        - "lambda:InvokeFunction"
+      Resource: "*"
+  timeout: 300
+
+functions:
+  generate:
+    handler: handler.generate
+    events:
+      - http:
+          path: generate
+          method: post
+          cors: true
