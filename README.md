@@ -6,8 +6,8 @@ It was built as an entry to the [Supabase Hackathon](https://supabase.io/blog/20
 
 TODO
 - [ ] grab the meme templates and store in supabase storage
-- [ ] create serverless node function
+- [x] create serverless node function
 - [ ] create seed captions
 - [ ] random generation of captions GPT-3?
-- [ ] integrate with discord / add generation command
+- [x] integrate with discord / add generation command
 - [ ] write up README for hackathon entry  
