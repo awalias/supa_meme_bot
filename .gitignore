@@ -1,3 +1,5 @@
 node_modules
 .env
 .serverless
+.nyc_output/
+coverage/
